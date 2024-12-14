@@ -18,7 +18,7 @@ class Session:
 
     def __init__(
         self,
-        client_identifier: ClientIdentifiers = "chrome_120",
+        client_identifier: ClientIdentifiers = "chrome_131",
         ja3_string: Optional[str] = None,
         h2_settings: Optional[Dict[str, int]] = None,
         h2_settings_order: Optional[List[str]] = None,
@@ -33,7 +33,7 @@ class Session:
         priority_frames: Optional[list] = None,
         header_order: Optional[List[str]] = None,
         header_priority: Optional[List[str]] = None,
-        random_tls_extension_order: Optional = False,
+        random_tls_extension_order: Optional = True,
         force_http1: Optional = False,
         catch_panics: Optional = False,
         debug: Optional = False,
